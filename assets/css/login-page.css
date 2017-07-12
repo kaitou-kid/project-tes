@@ -1,0 +1,103 @@
+/*======================================================
+ style css untuk halaman login 
+ =======================================================*/
+
+body, html{
+ 	height: 100%;
+}
+
+body{
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	padding: 0;
+ 	background-color: #303641;
+}
+
+.page-wrap{
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*=======================================
+Header Halaman Login
+=========================================*/
+
+.login-header{
+	margin: 0 auto;
+	height: 35vh;
+	width: 100%;
+	max-height: 35vh;
+	background-color: #373e4a;
+	position: relative;
+	display: block;
+	float: none;
+}
+
+.login-header::before{
+	content: '';
+	position: absolute;
+	border-top: 15px solid #373e4a;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	top: 100%;
+	left: 50%;
+}
+
+/*================================
+Form Login
+==================================*/
+
+.form-wrap{
+	margin: 50px auto;
+	height: auto;}
+
+.col-centered{
+	margin: 20px auto;
+	float: none;
+}
+
+.bg-icon{
+	background-color: #373e4a;
+	color: #CBCBCB;
+	border: none;
+}
+
+/* INPUT Costums */
+
+input[type="text"], input[type="password"]{
+	background-color: #373e4a;
+	outline: none;
+	border: none;
+	color: #CBCBCB;
+}
+
+button{
+	width: 100%;
+	height: 50px;
+}
+
+.btn-login{
+	background-color: #303641;
+	color: #CBCBCB;
+	border: 1px solid #707070;
+	font-size: 1.4em;
+}
+
+.btn-login:hover{
+	color: #3671F1;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login:focus{
+	background-color: #373e4a;
+	background: linear-gradient(to bottom, #373e4a, #303641);
+	box-shadow: 1px 4px 15px rgba(128, 181, 255, .4),
+	inset 0 1px 4px rgba(117, 117, 117, .6);
+	border: 1px solid #2D2D2D;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+	box-shadow: none;
+}
+
+/* *** */

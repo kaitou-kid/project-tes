@@ -1,0 +1,35 @@
+/*===========================================================
+  Css yang digunakan
+  ===========================================================*/
+
+/* main style  */
+   /* @import url('../css/main-page.css');
+   @import url('../css/login-page.css'); */
+
+/* Bootstrap css file */
+
+  @import url('../css/bootstrap.min.css');
+
+  @import url('../css/bootstrap-theme.min.css');
+
+/* Font-Awesom css file */
+  
+  @import url('../css/font-awesome.min.css');
+
+  @import url('../css/build.css');
+
+/* FONTS Tambahan */
+
+/* CSS PLUGIN */
+  /* plugin untuk pop up notifikasi */
+  @import url('../css/plugin/jquery.notify/stylesheets/jquery.growl.css');
+
+  /* plugin pop up dialog box */
+  @import url('../css/plugin/jquery-confirm/dist/jquery-confirm.min.css');
+  
+  /* plugin untuk datables */
+  @import url('../datatables/css/dataTables.bootstrap.css');
+  @import url('../datatables/css/jquery.dataTables.min.css');
+
+  /* plugin untuk datepicker */
+  @import url('../bootstrap-datepicker/css/bootstrap-datepicker3.min.css');

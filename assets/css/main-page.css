@@ -1,0 +1,633 @@
+/* =========================================
+		STYLE UNTUK HALAMAN ADMIN 
+   =========================================*/
+
+/* FORMAT WARNA YANG DIGUNAKAN */
+	
+	.color-1{
+		color: #FFF;
+	}
+
+	.color-2{
+		color: #000;
+	}
+
+	.color-bg-default{
+		background-color: #FFF;
+	}
+
+	.color-bg-1{
+		background-color: #353942;
+	}
+
+	.color-bg-2{
+		background-color: #f5f5f5;
+	}
+	
+/* FORMAT HALAMAN ADMIN */
+   body, html{
+   	height: 100%;
+   }
+
+   body{
+   	width: 100%;
+   	margin: 0;
+   	padding: 0;
+   }
+
+   .page-wrap{
+   	margin: 0;
+   	padding: 0;
+   }
+
+/* STYLE UNTUK NAVBAR ADMIN */
+	
+	#navbar{
+		margin: 0 auto;
+		position: fixed;
+		height: 40px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+	}
+
+	/* user profil dan setting */
+
+	.top-right {
+  		line-height: 1.8em;
+  		float: right;
+  		padding-right: 20px;
+  		padding-left: 10px;
+  		padding-top: 10px;
+  		font-weight: 600;
+  		/* profile box */
+  		/* notifications */
+  		/* hd button */
+	}
+
+	.top-right .link {
+	  display: inline-block;
+	  padding-left: 8px;
+	  height: 30px;
+	}
+
+	.top-right .link a {
+	  display: block;
+	}
+
+	.top-right .dropdown-menu {
+	  min-width: 135px;
+	}
+
+	.top-right .dropdown-menu .list-title {
+	  text-align: center;
+	}
+
+	.top-right .dropdown-menu li {
+	  position: relative;
+	  display: block;
+	}
+
+	.top-right a {
+	  color: #fff;
+	}
+	.top-right .profilebox {
+	  color: rgba(255, 255, 255, 0.95);
+	  font-size: 12px;
+	}
+
+	.top-right .profilebox img {
+	  width: 32px;
+	  height: 30px;
+	  float: left;
+	  border-radius: 100%;
+	  margin-right: 7px;
+	  margin-top: -4px;
+	}
+
+	.top-right .profilebox .caret {
+	  margin-left: 5px;
+	  color: rgba(255, 255, 255, 0.5);
+	}
+
+	.top-right .profilebox:hover {
+	  color: #fff;
+	}
+
+	.top-right .notifications {
+	  color: #fff;
+	  padding: 4px 12px;
+	  font-weight: bold;
+	  background: rgba(0, 0, 0, 0.4);
+	  border-radius: 999px;
+	}
+
+	.top-right .notifications:hover {
+	  background: rgba(0, 0, 0, 0.5);
+	}
+
+	.top-right .hdbutton {
+	  background: #fff;
+	  color: #404B5F;
+	  padding: 4px 16px;
+	  border-radius: 999px;
+	}
+
+	.top-right .hdbutton:hover {
+	  background: rgba(255, 255, 255, 0.95);
+	}
+
+	.dropdown-menu::before{
+	  content: '';
+	  position: absolute;
+	  border-bottom: 10px solid #FFF;
+	  border-right: 10px solid transparent;
+	  border-left: 10px solid transparent;
+	  bottom: 100%;
+	  right: 20px;
+	  z-index: 99999;
+	}
+
+	.dropdown-menu::after{
+	  content: '';
+	  position: absolute;
+	  border-bottom: 10px solid #DDD;
+	  border-right: 10px solid transparent;
+	  border-left: 10px solid transparent;
+	  bottom: 101%;
+	  right: 20px;
+	  z-index: 99998;
+	  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .175);
+	  		  box-shadow: 0 0 1px rgba(0, 0, 0, .175);
+	}
+
+/* STYLE UNTUK SIDEBAR ADMIN */
+
+	.main-sidebar{
+	  padding-top: 30px;
+	  width: 250px;
+	  min-height: 100%;
+	  position: absolute; 
+	  top: 40px;
+	  font-family: 'Montserrat', sans-serif;
+	  top: 40pxfont-size: 13px;
+  	  font-weight: normal;
+  	  float: left;
+  	  z-index: 500;
+	}
+
+	.sidebar-panel {
+	  background: none;
+	  margin: 0px 20px 0px 20px;
+	  border: none;
+	  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 0px;
+	}
+
+	.sidebar-panel-home:hover::before, .sidebar-panel-home:focus::before {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  border-top: 10px solid transparent;
+	  border-bottom: 10px solid transparent;
+	  border-right: 12px solid #fff;
+	  right: 0;
+	  top: 25%;
+	}
+
+	.sidebar-panel li a {
+	  display: block;
+	  color: rgba(0, 0, 0, 0.6);
+	  padding: 9px 20px 9px 54px;
+	  margin-left: -20px;
+	  margin-right: -20px;
+	  position: relative;
+	}
+
+	.sidebar-panel li a .caret {
+	  position: absolute;
+	  right: 20px;
+	  top: 18px;
+	  color: rgba(0, 0, 0, 0.4);
+	}
+
+	.sidebar-panel li .icon {
+	  position: absolute;
+	  left: 20px;
+	  top: 8px;
+	  display: block;
+	  color: rgba(0, 0, 0, 0.6);
+	  font-size: 19px;
+	  border-radius: 3px;
+	  text-align: center;
+	  width: 24px;
+	  height: 24px;
+	  padding-top: 1px;
+	}
+
+	.sidebar-panel li a:hover,
+	.sidebar-panel li a.active {
+	  color: #f2f2f2;
+	  background: #373e4a;
+	  outline: none;
+	}
+
+	.sidebar-panel li a:hover .icon,
+	.sidebar-panel li a.active .icon {
+	  color: #fff;
+	}
+
+	.sidebar-panel li ul {
+	  display: none;
+	  padding: 0;
+	  background: rgba(0, 0, 0, 0.1);
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	  font-size: 13px;
+	  margin: 0 -20px 0 -20px;
+	  font-weight: 400;
+	}
+
+	.sidebar-panel li ul li {
+	  position: relative;
+	  margin: 0;
+	}
+
+	.sidebar-panel li ul li a {
+	  margin: 0px;
+	  color: rgba(0, 0, 0, 0.6);
+	  padding: 9px 20px 9px 54px;
+	}
+
+	.sidebar-panel li ul li a:hover, .sidebar-panel li ul li a:focus{
+	  background: #9F9F9F;
+	  text-decoration: none;
+	  outline: none;
+	  color: #f5f5f5;
+	}
+
+	.sidebar-panel li ul li a:hover::before, .sidebar-panel li ul li a:focus::before{
+		content: '';
+		display: block;
+		position: absolute;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 12px solid #fff;
+		right: 0;
+		top: 25%;
+	}
+
+	.sidetitle {
+	  color: rgba(0, 0, 0, 0.5);
+	  font-size: 10px;
+	  padding: 0;
+	  margin: 0 0 5px 3px;
+	  letter-spacing: 0.4px;
+	}
+
+	.sidebar-plan {
+	  padding: 20px;
+	  font-size: 12px;
+	  bottom: 0;
+	}
+
+	.sidebar-plan .progress {
+	  height: 6px;
+	  background: rgba(0, 0, 0, 0.3);
+	  margin: 7px 0;
+	}
+
+	.sidebar-plan .progress-bar {
+	  background: #399bff;
+	}
+
+	.sidebar-plan .link {
+	  position: absolute;
+	  right: 20px;
+	  color: rgba(255, 255, 255, 0.6);
+	}
+
+	.sidebar-plan .link:hover {
+	  color: #fff;
+	}
+
+	.sidebar-plan .space {
+	  display: block;
+	  font-size: 11px;
+	  text-align: center;
+	  color: rgba(255, 255, 255, 0.5);
+	}
+
+	.sidebar-colorful .sidebar-panel li a .icon {
+	  font-size: 15px;
+	  color: #fff;
+	}
+
+	.sidebar-colorful .color1 {
+	  background: #399bff;
+	}
+
+	.sidebar-colorful .color2 {
+	  background: #33577b;
+	}
+
+	.sidebar-colorful .color3 {
+	  background: #26a65b;
+	}
+
+	.sidebar-colorful .color4 {
+	  background: #51b7a3;
+	}
+
+	.sidebar-colorful .color5 {
+	  background: #f39c12;
+	}
+
+	.sidebar-colorful .color6 {
+	  background: #ef4836;
+	}
+
+	.sidebar-colorful .color7 {
+	  background: #9a80b9;
+	}
+
+	.sidebar-colorful .color8 {
+	  background: #a2ded0;
+	}
+
+	.sidebar-colorful .color9 {
+	  background: #d2527f;
+	}
+
+	.sidebar-colorful .color10 {
+	  background: #c78568;
+	}
+
+	.sidebar-colorful .color11 {
+	  background: #e99844;
+	}
+
+	.sidebar-square .sidebar-panel li a .icon {
+	  font-size: 14px;
+	  border-radius: 0;
+	  background: rgba(0, 0, 0, 0.3);
+	}
+
+	.sidebar-no-icon .sidebar-panel li a {
+	  padding-left: 23px;
+	}
+
+	.sidebar-no-icon .sidebar-panel li a .icon {
+	  display: none;
+	}
+
+	/* Hide and Show Sidebar */
+
+	.main-sidebar-button{
+		height: 40px;
+		width: 42px;
+		padding-top: 5px;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		float: left;
+		border-right: 1px solid rgba(0, 0, 0, 0.15);
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.main-sidebar-button:hover, .main-sidebar-button:focus{
+		color: #4E7DFB;
+		text-shadow: 0 1px 6px rgba(255, 255, 255, 0.4);
+		outline: none;
+		background: #2D2D2D;
+	}
+
+/* STYLE HALAMAN CONTENT */
+	
+	.main-content{
+		margin-left: 250px;
+		padding-top: 80px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: #FFF;
+	}
+
+	/* =================================================================================
+	Page Header 
+	================================================================================= */
+	.page-header {
+	  background: #fff;
+	  margin: -20px -30px 20px -30px;
+	  padding: 20px;
+	  border-bottom: none;
+	  position: relative;
+	}
+	.page-header .title {
+	  padding: 0;
+	  margin: 0;
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 20px;
+	  line-height: normal;
+	  font-weight: normal;
+	  color: #37363e;
+	  padding-bottom: 6px;
+	}
+	.page-header .right {
+	  position: absolute;
+	  right: 20px;
+	  bottom: 20px;
+	  min-width: 500px;
+	  text-align: right;
+	}
+	.page-header .right .btn-group {
+	  float: right;
+	}
+	.page-header .right .btn {
+	  padding-left: 14px;
+	  padding-right: 14px;
+	  font-size: 13px;
+	}
+	.page-header .right .btn .fa {
+	  margin: 0 4px;
+	}
+	.page-header .right .btn .no-border {
+	  border: none;
+	}
+	.page-header .right .btn-group .btn {
+	  border: 1px solid #E8EBED;
+	}
+	.page-header .pagination {
+	  margin: 0;
+	}
+	.page-header .widget-inline-list {
+	  right: 0;
+	  bottom: -25px;
+	  position: relative !important;
+	}
+
+
+	/* ======================================================
+					FORMAT UNTUK HALAMAN ADMIN
+	   ====================================================== */
+
+		/* Quick Menu */
+	.quick-menu {
+	  padding: 0;
+	  background: #f5f5f5;
+	  margin-bottom: 10px;
+	  border-radius: 3px;
+	  font-family: 'Montserrat', sans-serif;
+	}
+	.quick-menu .label {
+	  position: absolute;
+	  padding: 4px 6px;
+	  top: -10px;
+	  right: 10px;
+	}
+	.quick-menu li {
+	  display: block;
+	  text-align: center;
+	  padding: 0;
+	  position: relative;
+	  font-size: 13px;
+	}
+	.quick-menu li .fa {
+	  display: block;
+	  font-size: 28px;
+	  margin-bottom: 5px;
+	  opacity: 0.8;
+	}
+	.quick-menu a {
+	  color: #58666e;
+	  display: block;
+	  padding: 18px 0;
+	}
+	.quick-menu a .fa {
+	  color: #399bff;
+	}
+	.quick-menu a:hover {
+	  background: rgba(0, 0, 0, 0.1);
+	  color: #37363e;
+	  text-decoration: none;
+	}
+
+	/* Panels */
+	.panel {
+	  box-shadow: none;
+	  border: 1px solid #e5e5e5;
+	  background: #fff;
+	  padding: 0;
+	  margin-bottom: 20px;
+	  position: relative;
+	}
+	.panel-footer {
+	  margin: -20px;
+	  margin-top: 20px;
+	  background: #f9f9f9;
+	}
+	.panel-transparent {
+	  background: none;
+	  border: none;
+	}
+	.panel-transparent .panel-title {
+	  background: none;
+	  border: none;
+	}
+	.panel-default > .panel-heading {
+	  background-color: inherit;
+	  border-bottom: 0;
+	  color: #3D464D;
+	}
+	.panel-title {
+	  font-family: 'Montserrat', sans-serif;
+	  color: #58666e;
+	  font-size: 13px;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  padding: 16px 20px;
+	  margin: -20px;
+	  background: #fff;
+	  margin-bottom: 5px;
+	  border-bottom: none;
+	  border-top-left-radius: 3px;
+	  border-top-right-radius: 3px;
+	}
+	.panel-body,
+	.panel-heading {
+	  padding: 0;
+	  color: inherit;
+	  background-color: transparent;
+	  border-color: none;
+	}
+	.panel-heading {
+	  background: transparent;
+	  border-bottom: transparent;
+	}
+	.panel .badge {
+	  font-size: 11px;
+	  font-family: 'Open Sans', sans-serif;
+	  text-transform: none;
+	  padding: 4px 10px;
+	  margin-left: 5px;
+	  font-weight: normal;
+	}
+	.panel-footer {
+	  background: rgba(0, 0, 0, 0.01);
+	  border-top: 1px solid inherit;
+	}
+	.panel-title .badge {
+	  color: #fff;
+	  background-color: rgba(0, 0, 0, 0.2);
+	}
+	.panel-heading {
+	  font-size: 20px;
+	  padding-bottom: 15px;
+	  font-weight: 300;
+	}
+	.panel .list-group {
+	  margin: -20px;
+	  margin-top: 20px;
+	  background: transparent;
+	}
+	.panel .list-group li {
+	  border: 1px solid rgba(255, 255, 255, 0.2);
+	  border-left: 0;
+	  background: transparent;
+	  border-right: 0;
+	}
+	.panel .list-group-item:first-child {
+	  border-top-left-radius: 0px;
+	  border-top-right-radius: 0px;
+	}
+	.panel .list-group-item:last-child {
+	  margin-bottom: 0;
+	  border-bottom-right-radius: 0px;
+	  border-bottom-left-radius: 0px;
+	  border-bottom: 0;
+	}
+
+	/* FORMAT BUTTON */
+
+	.btn-light{
+		color: #365CC6;
+		background-color: #FFF;
+		border-color: #C0C0C0;
+	}
+
+	.btn-light:hover{
+		color: #DDD;
+		background-color: #337ab7;
+	}
+
+	/* FORMAT TEXT FIELD */
+
+	.search-icon{
+		background-color: #FFF;
+		border-right: none;
+	}
+
+	input[type="text"].search-box{
+		border-left: none;
+	}
